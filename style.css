@@ -1,0 +1,115 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-attachment: fixed;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    right: 100px;
+    bottom: 80px;
+    background: url();
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h2 {
+    text-align: center;
+    font-style: 10em;
+    line-height: 0.7em;
+    color: rgb(255, 255, 255);
+    margin-top: -80;
+    font-size: 15em;
+}
+
+.container h2 span {
+    display: block;
+    font-weight: 600;
+    letter-spacing:5px;
+    font-size: 0.25em;
+}
+
+.countdown {
+    display: flex;
+    margin-top: 0 50px;
+}
+
+.countdown div {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    line-height: 100px;
+    background: #333;
+    background: rgba(75, 75, 75, 0.5);
+    color: #fff;
+    margin: 0 15px;
+    font-style: 3em;
+    font-weight: 700;
+    font-size: 3em;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.countdown div:before{
+    content: '';
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: -5px;
+    left : 0;
+    width: 100%;
+    height: 35px;
+    background: rgba(255, 255, 0, 0.75);
+    color: rgb(0, 0, 0);
+    font-size: .85em;
+    line-height: 35px;
+    font-weight: 500;
+}
+
+.countdown #day:before{
+    content: 'Days';
+    font-size: 20px;
+}
+.countdown #hour:before{
+    content: 'Hours';
+    font-size: 20px;
+}
+.countdown #minute:before{
+    content: 'Minutes';
+    font-size: 20px;
+}
+.countdown #second:before{
+    content: 'Seconds';
+    font-size: 20px;
+}
