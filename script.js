@@ -15,10 +15,10 @@ function newYear(){
     var m = Math.floor((gap % (hour)) / (minute));
     var s = Math.floor((gap % (minute)) / (second));
 
-    document.getElementById('day').innerText = d;
-    document.getElementById('hour').innerText = h;
-    document.getElementById('minute').innerText = m;
-    document.getElementById('second').innerText = s;
+    document.getElementById('day').innerText = d >= 10 ? d : `0${d}`;
+    document.getElementById('hour').innerText = h >= 10 ? h : `0${h}`;
+    document.getElementById('minute').innerText = m >= 10 ? m : `0${m}`;
+    document.getElementById('second').innerText =  s >= 10 ? s : `0${s}`;
 }
 
 setInterval(function() {
